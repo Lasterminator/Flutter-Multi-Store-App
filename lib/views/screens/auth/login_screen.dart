@@ -71,7 +71,11 @@ class LoginScreen extends StatelessWidget {
                 ),
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: Image.asset('assets/icons/email.png', width: 20, height: 20,),
+                  child: Image.asset(
+                    'assets/icons/email.png',
+                    width: 20,
+                    height: 20,
+                  ),
                 ),
               ),
             ),
@@ -111,9 +115,37 @@ class LoginScreen extends StatelessWidget {
                 ),
                 prefixIcon: Padding(
                   padding: const EdgeInsets.all(10.0),
-                  child: Image.asset('assets/icons/password.png', width: 20, height: 20,),
+                  child: Image.asset(
+                    'assets/icons/password.png',
+                    width: 20,
+                    height: 20,
+                  ),
                 ),
                 suffixIcon: Icon(Icons.visibility),
+              ),
+            ),
+
+            SizedBox(height: 20),
+
+            // sign in button
+            Container(
+              width: 320,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5),
+                color: Color(0xFF102DE1),
+              ),
+              child: Center(
+                child: Text(
+                  'Sign In',
+                  style: GoogleFonts.getFont(
+                    'Lato',
+                    fontSize: 17,
+                    letterSpacing: 0.1,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.white,
+                  ),
+                ),
               ),
             ),
           ],
