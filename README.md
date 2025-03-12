@@ -1,4 +1,4 @@
-# mac_store_app
+# Multi Store App
 
 A new Flutter project.
 
